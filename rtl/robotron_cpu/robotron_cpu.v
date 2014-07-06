@@ -893,6 +893,13 @@ module robotron_cpu(
    assign board_interface_w1 = 1'b1;
 
 `ifdef VERILATOR
+ `define SIM 1
+`endif
+`ifdef __CVER__
+ `define SIM 1
+`endif
+   
+`ifdef SIM
    assign E = clock_e;
    assign Q = clock_q;
 `else

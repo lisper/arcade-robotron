@@ -28,7 +28,7 @@ module m6810(input clk,
    assign data_out = ram[address];
 
 `ifdef debug_ram
-   always @(*)
+   always @(cs or we or address or data_out)
      if (cs && ~we)
        $display("m6810: ram[%x] => %x", address, data_out);
 `endif
