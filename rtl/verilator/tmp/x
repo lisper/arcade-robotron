@@ -1,0 +1,7 @@
+g++  -I. -MMD -I/usr/local/share/verilator/include -I/usr/local/share/verilator/include/vltstd -DVL_PRINTF=printf -DVM_TRACE=1 -DVM_COVERAGE=0   -O \
+           -fno-auto-inc-dec -fno-compare-elim -fno-cprop-registers -fno-dce -fno-defer-pop -fno-delayed-branch -fno-dse \
+           -fno-guess-branch-probability -fno-if-conversion2 -fno-if-conversion -fno-ipa-pure-const -fno-ipa-profile -fno-ipa-reference \
+           -fno-merge-constants -fno-split-wide-types -fno-tree-bit-ccp -fno-tree-builtin-call-dce -fno-tree-ccp -fno-tree-ch \
+           -fno-tree-copyrename -fno-tree-dce -fno-tree-dominator-opts -fno-tree-dse -fno-tree-forwprop -fno-tree-fre -fno-tree-phiprop \
+           -fno-tree-sra -fno-tree-pta -fno-tree-ter -fno-unit-at-a-time \
+-c -o Vrobotron_verilator__ALLcls.o Vrobotron_verilator__ALLcls.cpp

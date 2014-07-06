@@ -1,0 +1,18 @@
+GPLCVER_2.12a of 05/16/07 (Linux-elf).
+Copyright (c) 1991-2007 Pragmatic C Software Corp.
+  All Rights reserved.  Licensed under the GNU General Public License (GPL).
+  See the 'COPYING' file for details.  NO WARRANTY provided.
+Today is Tue Jan  7 10:34:58 2014.
+Compiling source file "cpu09_wrapper.v"
+Compiling source file "MC6809_cpu.v"
+Compiling source file "alu16.v"
+Compiling source file "decoders.v"
+Compiling source file "regblock.v"
+Highest level modules:
+cpu09
+
+0 simulation events and 245 declarative immediate assigns processed.
+135 behavioral statements executed (64 procedural suspends).
+  Times (in sec.):  Translate 0.0, load/optimize 0.1, simulation 0.1.
+  There were 0 error(s), 0 warning(s), and 589 inform(s).
+End of GPLCVER_2.12a at Tue Jan  7 10:34:58 2014 (elapsed 0.0 seconds).

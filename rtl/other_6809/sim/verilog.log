@@ -1,0 +1,201 @@
+GPLCVER_2.12a of 05/16/07 (Linux-elf).
+Copyright (c) 1991-2007 Pragmatic C Software Corp.
+  All Rights reserved.  Licensed under the GNU General Public License (GPL).
+  See the 'COPYING' file for details.  NO WARRANTY provided.
+Today is Tue Jan  7 10:38:07 2014.
+Compiling source file "tb.v"
+Compiling source file "../rtl/alu16.v"
+Compiling source file "../rtl/cpu09_wrapper.v"
+Compiling source file "../rtl/decoders.v"
+Compiling source file "../rtl/defs.v"
+Compiling source file "../rtl/MC6809_cpu.v"
+Compiling source file "../rtl/regblock.v"
+**tb.v(21) WARN** [531] cpu(MC6809_cpu) explicit connection list fewer ports 7 connected than type's 11
+Highest level modules:
+tb
+cpu09
+
+instructions_test.hex read
+R fffe = 0                   75
+R ffff = 0                   95
+cpu_data_i 0                  115
+R 0 = cc                  135
+R 1 = aa                  175
+R 2 = bb                  205
+R 3 = 3d                  255
+R 4 = 8e                  325
+R 5 = 12                  365
+R 6 = 34                  395
+R 7 = 10                  445
+R 8 = 8e                  475
+R 9 = 56                  515
+R a = 78                  545
+R b = 1e                  595
+R c = 89                  625
+R d = 1e                  675
+R e = 21                  705
+R f = 1f                  755
+R 10 = 13                  785
+R 11 = 1f                  835
+R 12 = 83                  865
+R 13 = 1f                  915
+R 14 = 93                  945
+R 15 = 1f                  995
+R 16 = 18                 1025
+R 17 = 1f                 1075
+R 18 = 19                 1105
+R 19 = 20                 1155
+R 1a = 2                 1195
+R 1d = 86                 1235
+R 1e = 2                 1275
+R 1f = c6                 1325
+R 20 = 0                 1365
+R 21 = 97                 1415
+R 22 = 0                 1455
+W 0 = 2                 1495
+R 23 = d7                 1525
+R 24 = 1                 1565
+W 1 = 0                 1605
+R 25 = 9e                 1635
+R 26 = 0                 1675
+R 27 = 10                 1725
+R 28 = 8e                 1755
+R 29 = 0                 1795
+R 2a = 0                 1825
+R 2b = ac                 1875
+R 2c = a4                 1915
+R 0 = 2                 1955
+R 1 = 0                 1975
+R 2d = 27                 2025
+R 2e = 2                 2065
+R 31 = 10                 2105
+R 32 = ce                 2135
+R 33 = 0                 2175
+R 34 = ff                 2205
+R 35 = 34                 2255
+R 36 = 6                 2295
+W fe = 0                 2325
+W fd = 2                 2355
+R 37 = 35                 2385
+R 38 = 10                 2425
+R fd = 2                 2465
+R fe = 0                 2485
+R 39 = ac                 2525
+R 3a = a4                 2565
+R 0 = 2                 2605
+R 1 = 0                 2625
+R 3b = 26                 2675
+R 3c = f2                 2715
+R 3d = 8d                 2755
+R 3e = 9                 2795
+W fe = 3f                 2825
+W fd = 0                 2845
+R 48 = 34                 2885
+R 49 = 20                 2925
+W fc = 0                 2955
+W fb = 0                 2975
+R 4a = 35                 3015
+R 4b = 20                 3055
+R fb = 0                 3095
+R fc = 0                 3115
+R 4c = ac                 3155
+R 4d = 20                 3195
+R 0 = 2                 3235
+R 1 = 0                 3255
+R 4e = 39                 3305
+R fd = 0                 3355
+R fe = 3f                 3375
+R 3f = 26                 3415
+R 40 = ee                 3455
+R 41 = 17                 3495
+R 42 = 0                 3535
+R 43 = b                 3565
+W fe = 44                 3595
+W fd = 0                 3615
+R 4f = 33                 3655
+R 50 = 21                 3695
+R 51 = 31                 3755
+R 52 = 20                 3795
+R 53 = 39                 3855
+R fd = 0                 3905
+R fe = 44                 3925
+R 44 = 26                 3965
+R 45 = e9                 4005
+R 46 = 20                 4045
+R 47 = fe                 4085
+R 46 = 20                 4125
+R 47 = fe                 4165
+R 46 = 20                 4205
+R 47 = fe                 4245
+R 46 = 20                 4285
+R 47 = fe                 4325
+R 46 = 20                 4365
+R 47 = fe                 4405
+R 46 = 20                 4445
+R 47 = fe                 4485
+R 46 = 20                 4525
+R 47 = fe                 4565
+R 46 = 20                 4605
+R 47 = fe                 4645
+R 46 = 20                 4685
+R 47 = fe                 4725
+R 46 = 20                 4765
+R 47 = fe                 4805
+R 46 = 20                 4845
+R 47 = fe                 4885
+R 46 = 20                 4925
+R 47 = fe                 4965
+R 46 = 20                 5005
+R 47 = fe                 5045
+R 46 = 20                 5085
+R 47 = fe                 5125
+R 46 = 20                 5165
+R 47 = fe                 5205
+R 46 = 20                 5245
+R 47 = fe                 5285
+R 46 = 20                 5325
+R 47 = fe                 5365
+R 46 = 20                 5405
+R 47 = fe                 5445
+R 46 = 20                 5485
+R 47 = fe                 5525
+R 46 = 20                 5565
+R 47 = fe                 5605
+R 46 = 20                 5645
+R 47 = fe                 5685
+R 46 = 20                 5725
+R 47 = fe                 5765
+R 46 = 20                 5805
+R 47 = fe                 5845
+R 46 = 20                 5885
+R 47 = fe                 5925
+R 46 = 20                 5965
+R 47 = fe                 6005
+R 46 = 20                 6045
+R 47 = fe                 6085
+R 46 = 20                 6125
+R 47 = fe                 6165
+R 46 = 20                 6205
+R 47 = fe                 6245
+R 46 = 20                 6285
+R 47 = fe                 6325
+R 46 = 20                 6365
+R 47 = fe                 6405
+R 46 = 20                 6445
+R 47 = fe                 6485
+R 46 = 20                 6525
+R 47 = fe                 6565
+R 46 = 20                 6605
+R 47 = fe                 6645
+R 46 = 20                 6685
+R 47 = fe                 6725
+R 46 = 20                 6765
+R 47 = fe                 6805
+R 46 = 20                 6845
+R 47 = fe                 6885
+R 46 = 20                 6925
+R 47 = fe                 6965
+R 46 = 20                 7005
+R 47 = fe                 7045
+Halted at location **tb.v(41) time 7046 from call to $finish.
+  There were 0 error(s), 1 warning(s), and 740 inform(s).

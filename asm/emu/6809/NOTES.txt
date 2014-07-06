@@ -1,0 +1,89 @@
+AS,JF, 1.2, file ../../../roms/mame/robotron/robotron.snd
+S  $0000 U  $0000 X  $0000 Y  $0000   EFHINZVC
+A  $00   B  $00   DP $00   CC $50     .1.1....
+PC $F01D 0F8E  NextInst: CLR <$8E
+
+S  $0000 U  $0000 X  $0000 Y  $0000   EFHINZVC
+A  $00   B  $00   DP $00   CC $54     .1.1.1..
+PC $F01F 007F  NextInst: NEG <$7F
+
+S  $0000 U  $0000 X  $0000 Y  $0000   EFHINZVC
+A  $00   B  $00   DP $00   CC $54     .1.1.1..
+PC $F021 CE0400  NextInst: LDU #$0400
+
+S  $0000 U  $0400 X  $0000 Y  $0000   EFHINZVC
+A  $00   B  $00   DP $00   CC $50     .1.1....
+PC $F024 6F01  NextInst: CLR 1,X
+
+S  $0000 U  $0400 X  $0000 Y  $0000   EFHINZVC
+A  $00   B  $00   DP $00   CC $54     .1.1.1..
+PC $F026 6F03  NextInst: CLR 3,X
+
+S  $0000 U  $0400 X  $0000 Y  $0000   EFHINZVC
+A  $00   B  $00   DP $00   CC $54     .1.1.1..
+PC $F028 86FF  NextInst: LDA #$FF
+
+S  $0000 U  $0400 X  $0000 Y  $0000   EFHINZVC
+A  $FF   B  $00   DP $00   CC $58     .1.11...
+PC $F02A A700  NextInst: STA 0,X
+
+S  $0000 U  $0400 X  $0000 Y  $0000   EFHINZVC
+A  $FF   B  $00   DP $00   CC $58     .1.11...
+PC $F02C 6F02  NextInst: CLR 2,X
+
+S  $0000 U  $0400 X  $0000 Y  $0000   EFHINZVC
+A  $FF   B  $00   DP $00   CC $54     .1.1.1..
+PC $F02E 8637  NextInst: LDA #$37
+
+S  $0000 U  $0400 X  $0000 Y  $0000   EFHINZVC
+A  $37   B  $00   DP $00   CC $50     .1.1....
+PC $F030 A703  NextInst: STA 3,X
+
+S  $0000 U  $0400 X  $0000 Y  $0000   EFHINZVC
+A  $37   B  $00   DP $00   CC $50     .1.1....
+PC $F032 863C  NextInst: LDA #$3C
+
+S  $0000 U  $0400 X  $0000 Y  $0000   EFHINZVC
+A  $3C   B  $00   DP $00   CC $50     .1.1....
+PC $F034 A701  NextInst: STA 1,X
+
+S  $0000 U  $0400 X  $0000 Y  $0000   EFHINZVC
+A  $3C   B  $00   DP $00   CC $50     .1.1....
+PC $F036 9705  NextInst: STA <$05
+
+S  $0000 U  $0400 X  $0000 Y  $0000   EFHINZVC
+A  $3C   B  $00   DP $00   CC $50     .1.1....
+PC $F038 4F  NextInst: CLRA 
+
+S  $0000 U  $0400 X  $0000 Y  $0000   EFHINZVC
+A  $00   B  $00   DP $00   CC $54     .1.1.1..
+PC $F039 9703  NextInst: STA <$03
+
+S  $0000 U  $0400 X  $0000 Y  $0000   EFHINZVC
+A  $00   B  $00   DP $00   CC $54     .1.1.1..
+PC $F03B 9700  NextInst: STA <$00
+
+S  $0000 U  $0400 X  $0000 Y  $0000   EFHINZVC
+A  $00   B  $00   DP $00   CC $54     .1.1.1..
+PC $F03D 9701  NextInst: STA <$01
+
+S  $0000 U  $0400 X  $0000 Y  $0000   EFHINZVC
+A  $00   B  $00   DP $00   CC $54     .1.1.1..
+PC $F03F 9702  NextInst: STA <$02
+
+S  $0000 U  $0400 X  $0000 Y  $0000   EFHINZVC
+A  $00   B  $00   DP $00   CC $54     .1.1.1..
+PC $F041 9704  NextInst: STA <$04
+
+S  $0000 U  $0400 X  $0000 Y  $0000   EFHINZVC
+A  $00   B  $00   DP $00   CC $54     .1.1.1..
+PC $F043 0E20  NextInst: JMP <$20
+
+S  $0000 U  $0400 X  $0000 Y  $0000   EFHINZVC
+A  $00   B  $00   DP $00   CC $54     .1.1.1..
+PC $0020 0000  NextInst: NEG <$00
+
+S  $0000 U  $0400 X  $0000 Y  $0000   EFHINZVC
+A  $00   B  $00   DP $00   CC $54     .1.1.1..
+PC $0022 0000  NextInst: NEG <$00
+

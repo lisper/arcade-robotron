@@ -1,0 +1,84 @@
+[*]
+[*] GTKWave Analyzer v3.3.34 (w)1999-2012 BSI
+[*] Tue Jan  7 18:03:36 2014
+[*]
+[dumpfile] "/files/code/robotron/rtl/robotron_cpu/robotron_cpu_tb.vcd"
+[dumpfile_mtime] "Tue Jan  7 17:56:19 2014"
+[dumpfile_size] 97047
+[savefile] "/files/code/robotron/rtl/robotron_cpu/robotron_cpu_tb.gtkw"
+[timestart] 1930
+[size] 1373 600
+[pos] -1 -1
+*-8.044637 2198 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] robotron_cpu_tb.
+[treeopen] robotron_cpu_tb.uut.
+[sst_width] 224
+[signals_width] 281
+[sst_expanded] 1
+[sst_vpaned_height] 151
+@28
+robotron_cpu_tb.CLK
+robotron_cpu_tb.RESET_N
+robotron_cpu_tb.uut.mpu_reset
+@22
+robotron_cpu_tb.uut.reset_counter[7:0]
+@28
+robotron_cpu_tb.uut.reset_request
+@22
+robotron_cpu_tb.AN[3:0]
+@28
+robotron_cpu_tb.AVMA
+robotron_cpu_tb.BA
+robotron_cpu_tb.BS
+robotron_cpu_tb.BUSY
+robotron_cpu_tb.DP
+robotron_cpu_tb.E
+robotron_cpu_tb.Q
+@22
+robotron_cpu_tb.MemAdr[23:1]
+robotron_cpu_tb.MemDB[15:0]
+@28
+robotron_cpu_tb.MemOE
+robotron_cpu_tb.MemWR
+@22
+robotron_cpu_tb.A[15:0]
+robotron_cpu_tb.D_IN[7:0]
+robotron_cpu_tb.D_OUT[7:0]
+@28
+robotron_cpu_tb.R_W_N
+@22
+robotron_cpu_tb.bus_address[15:0]
+robotron_cpu_tb.BTN[3:0]
+robotron_cpu_tb.LED[7:0]
+robotron_cpu_tb.SEG[6:0]
+robotron_cpu_tb.SW[7:0]
+@28
+robotron_cpu_tb.bus_available
+@22
+robotron_cpu_tb.bus_data[7:0]
+@28
+robotron_cpu_tb.bus_read
+robotron_cpu_tb.bus_status
+robotron_cpu_tb.Hsync
+robotron_cpu_tb.Vsync
+robotron_cpu_tb.vgaBlue[2:0]
+robotron_cpu_tb.vgaGreen[2:0]
+robotron_cpu_tb.vgaRed[2:0]
+@22
+robotron_cpu_tb.uut.clock_12_phase[11:0]
+@200
+------
+@22
+robotron_cpu_tb.cpu.pc[15:0]
+@200
+-----
+@28
+robotron_cpu_tb.uut.rom_access
+robotron_cpu_tb.uut.ram_access
+robotron_cpu_tb.uut.cmos_access
+robotron_cpu_tb.uut.color_table_access
+robotron_cpu_tb.uut.control_access
+@29
+robotron_cpu_tb.uut.write
+[pattern_trace] 1
+[pattern_trace] 0

@@ -1,0 +1,28 @@
+vga pins
+
+1 red
+2 green
+3 blue
+
+6 gnd
+
+13 hsync
+14 vsync
+
+PMOD
+
+1 h
+2 v
+3 r
+4 g
+5 gnd
+
+7 b
+
+----
+
+read switches
+d405 check for slam
+d439
+dc59
+d45d

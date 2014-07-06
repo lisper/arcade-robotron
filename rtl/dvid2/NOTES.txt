@@ -1,0 +1,18 @@
+clocking120/pll_base_inst	PLL_BASE
+				dvid_inst/ODDR2_red		ODDR2  		X0Y0	OLOGIC_X12Y3
+dvid_inst/ODDR2_green		ODDR2  		X0Y0	OLOGIC_X11Y3
+dvid_inst/ODDR2_blue		ODDR2  		X0Y0	OLOGIC_X10Y3
+dvid_inst/ODDR2_clock		ODDR2  		X0Y0	OLOGIC_X7Y1
+
+dvid_inst/OBUFDS_blue     OBUFDS 
+dvid_inst/OBUFDS_red   
+dvid_inst/OBUFDS_green 
+dvid_inst/OBUFDS_clock 
+
+INST "dvid_inst/clocking_inst/pll_base_inst" LOC=PLLE2_ADV_X0Y0;
+
+INST "dvid_inst/clocking_inst/clkout1_buf" LOC=BUFGMUX_X0Y0
+INST "dvid_inst/clocking_inst/clkout2_buf" LOC=BUFGMUX_X1Y0
+
+INST "hdmi/clk_dvi_p BUFGMUX_X3Y13
+INST "hdmi/clk_dvi_n  BUFGMUX_X2Y2
