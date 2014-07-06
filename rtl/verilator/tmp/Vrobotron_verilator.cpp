@@ -57075,7 +57075,7 @@ void Vrobotron_verilator::_sequent__TOP__9(Vrobotron_verilator__Syms* __restrict
     VL_SIG16(__Vdlyvdim0__v__DOT__uut__DOT__lb__DOT__line__v0,10,0);
     VL_SIG16(__Vdlyvval__v__DOT__uut__DOT__lb__DOT__line__v0,8,0);
     // Body
-    // ALWAYS at ../robotron_cpu/line_buffer.v:100
+    // ALWAYS at ../robotron_cpu/line_buffer.v:60
     if (vlTOPp->v__DOT__uut__DOT__reset) {
 	vlTOPp->v__DOT__uut__DOT__lb__DOT__r_data = 0;
     } else {
@@ -57101,7 +57101,7 @@ void Vrobotron_verilator::_sequent__TOP__9(Vrobotron_verilator__Syms* __restrict
 						     << 2))) 
 					      + (IData)(vlTOPp->v__DOT__uut__DOT__hoffset))));
     }
-    // ALWAYSPOST at ../robotron_cpu/line_buffer.v:105
+    // ALWAYSPOST at ../robotron_cpu/line_buffer.v:65
     if (vlTOPp->__Vdlyvset__v__DOT__uut__DOT__lb__DOT__line__v0) {
 	vlTOPp->v__DOT__uut__DOT__lb__DOT__line[(IData)(__Vdlyvdim0__v__DOT__uut__DOT__lb__DOT__line__v0)] 
 	    = __Vdlyvval__v__DOT__uut__DOT__lb__DOT__line__v0;

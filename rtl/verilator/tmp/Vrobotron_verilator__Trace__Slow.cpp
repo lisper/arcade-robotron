@@ -556,7 +556,6 @@ void Vrobotron_verilator::traceInitThis__1(Vrobotron_verilator__Syms* __restrict
 	vcdp->declBit  (c+314,"v uut lb iline",-1);
 	vcdp->declBus  (c+315,"v uut lb w_data",-1,8,0);
 	vcdp->declBus  (c+117,"v uut lb r_data",-1,8,0);
-	vcdp->declBit  (c+335,"v uut lb border",-1);
 	vcdp->declBus  (c+316,"v uut lb hcountx12",-1,9,0);
 	vcdp->declBus  (c+317,"v uut lb hcountx4",-1,9,0);
 	vcdp->declBus  (c+31,"v uut lb hcountx12po",-1,9,0);
