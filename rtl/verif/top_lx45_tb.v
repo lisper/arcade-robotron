@@ -1,5 +1,5 @@
 //
-//
+// top for testing lx45 version - used with isim
 //
 
 module top_lx45_tb();
