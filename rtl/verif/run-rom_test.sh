@@ -1,5 +1,6 @@
 #!/bin/sh
 
-#+loadvpi=../pli/mmc/pli_mmc.so:vpi_compat_bootstrap +incdir+../rtl
+ROMS=../../roms/output
+SOUND=../robotron_sound
 
-cver rom_test.v rom_snd.v ../../roms/output/rom_snd_blocks.v
+cver rom_test.v $SOUND/rom_snd.v $ROMS/rom_snd_blocks.v

@@ -91,7 +91,7 @@ module mc6821_tb;
 	#(clock_period/2);
      end
 
-   initial
+   always
     begin
         @(posedge clock);
         @(posedge clock);
@@ -110,6 +110,13 @@ module mc6821_tb;
         @(posedge clock);
         @(posedge clock);
     end
+
+   always @(posedge clock)
+     if (e_set)
+       e_sync = 1;
+     else
+       if (e_clear)
+	 e_sync = 0;
 
    initial
     begin		
