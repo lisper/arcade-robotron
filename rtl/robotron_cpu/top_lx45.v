@@ -9,25 +9,25 @@
 `define hdmi
 
 module top_lx45(
-		output [5:1] led,
-		input 	     sysclk,
+		output [5:1]   led,
+		input 	       sysclk,
 
-		output 	     vga_hsync,
-		output 	     vga_vsync,
-		output 	     vga_r,
-		output 	     vga_g,
-		output 	     vga_b,
+		output 	       vga_hsync,
+		output 	       vga_vsync,
+		output 	       vga_r,
+		output 	       vga_g,
+		output 	       vga_b,
 
-		input 	     switch,
-		input 	     button1,
-		input 	     button2,
-		input 	     button3,
+		input 	       switch,
+		input [10:0]   Wing_A_in,
+		input [6:0]    Wing_B_in,
+		output [15:11] Wing_A_out,
    
-		output [3:0] tmds,
-		output [3:0] tmdsb,
+		output [3:0]   tmds,
+		output [3:0]   tmdsb,
 
-		output 	     audio_l,
-		output 	     audio_r
+		output 	       audio_l,
+		output 	       audio_r
 		);
    
    wire CLK;
@@ -100,22 +100,38 @@ module top_lx45(
    BUFG sysclk_bufg (.I(sysclk), .O(sysclk_buf));
 
    assign CLK = sysclk_buf;
-   assign SW = 8'b0;
-   assign BTN = { button3, button2, button1, switch };
 
    assign vga_hsync = ~Hsync;
    assign vga_vsync = Vsync;
    assign vga_r = vgaRed[2] | vgaRed[1]   | vgaRed[0];
    assign vga_g	= vgaGreen[2] | vgaGreen[1] | vgaGreen[0];
    assign vga_b	= vgaBlue[2]  | vgaBlue[1]  | vgaBlue[0];
-   
+
+   assign led = { LED[7], LED[5], LED[4], LED[3], LED[0] };
+
+`ifdef testing
+   assign SW = 8'b0;
+   assign BTN = { button3, button2, button1, switch };
 //   assign ja = 8'b0;
 //   assign jb = 8'b0;
    assign ja = ~8'h10;
    assign jb = ~8'h20;
+`else
+   assign SW = 8'b0;
+   assign BTN = { Wing_A_in[1], Wing_A_in[2], Wing_A_in[0], switch };
 
-   assign led = { LED[7], LED[5], LED[4], LED[3], LED[0] };
+   assign ja = { Wing_A_in[8], Wing_A_in[7], Wing_A_in[10], Wing_A_in[9],
+		 Wing_A_in[4], Wing_A_in[3], Wing_A_in[6], Wing_A_in[5] };
 
+   assign jb = ~8'h00;
+
+   assign Wing_A_out[11] = LED[0];
+   assign Wing_A_out[12] = LED[3];
+   assign Wing_A_out[13] = LED[4];
+   assign Wing_A_out[14] = LED[5];
+   assign Wing_A_out[15] = LED[6];
+`endif // !`ifdef testing
+   
 `ifdef main_display
    //
    assign LIC = 1'b0;
