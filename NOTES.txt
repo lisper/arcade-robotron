@@ -26,3 +26,141 @@ d405 check for slam
 d439
 dc59
 d45d
+
+----
+
+defender
+
+0000-9800 video ram
+c000-cfff rom (4 banks) + i/o
+d000-ffff rom
+
+c000-c00f color
+c3fc watchdog
+c400-c4ff cmos
+c800 video counter
+cc00 pia1_dataa
+cc02 piai_datab
+cc04
+cc06
+d000 bank select for c000-cfff
+ 0 = i/o
+ 1 = bank 1
+ 2 = bank 2
+ 3 = bank 3
+ 7 = bank 4
+
+     2048 defend.1	0x0d000 2k
+     2048 defend.4	0x0d800 2k
+     4096 defend.2	0x0e000 4k
+     4096 defend.3	0x0f000 4k
+
+     2048 defend.9	0x10000 bank=1
+     2048 defend.12	0x10800
+     2048 defend.8	0x11000 bank=2
+     2048 defend.11	0x11800
+     2048 defend.7	0x12000 bank=3
+     2048 defend.10	0x12800
+                        0x130   bank=4
+                        0x138
+                        0x140   bank=5
+                        0x148
+                        0x150   bank=6
+                        0x158
+     2048 defend.6	0x16000 bank=7
+
+     defend.snd		00f800
+
+----
+
+robotron
+
+1 1111 11
+6 5432 1098 7654 3210
+
+9000 -
+a000 - 
+b000 -
+c000 -
+
+d000 - dfff  4k
+e000 - efff  4k
+f000 - ffff  4k
+
+
+16:13     12:1
+
+0    4096 robotron.sb1  bank=1
+1    4096 robotron.sb2  bank=2
+2    4096 robotron.sb3  bank=3
+3    4096 robotron.sb4  bank=4
+4    4096 robotron.sb5
+5    4096 robotron.sb6
+6    4096 robotron.sb7
+7    4096 robotron.sb8
+8    4096 robotron.sb9  bank=9
+
+d    4096 robotron.sba
+e    4096 robotron.sbb
+f    4096 robotron.sbc
+
+    assign SLAM = SW[6];
+    assign H_S_RESET = SW[2];
+    assign ADVANCE = SW[1];
+    assign AUTO_UP = SW[0];
+    
+    assign PLAYER_1_START = BTN[3];
+    assign PLAYER_2_START = BTN[2];
+    assign C_COIN = BTN[1];
+    
+    assign MOVE_UP_1 = JA[0];
+    assign MOVE_DOWN_1 = JA[1];
+    assign MOVE_LEFT_1 = JA[2];
+    assign MOVE_RIGHT_1 = JA[3];
+    assign FIRE_UP_1 = JA[4];
+    assign FIRE_DOWN_1 = JA[5];
+    assign FIRE_LEFT_1 = JA[6];
+    assign FIRE_RIGHT_1 = JA[7];
+    
+----------
+
+CABINET
+
+need 20x terminal block
+wing a has 16x logic in
+wing b has 16x logic in
+
+i/o panel		centipede	ff		robotron	defender
+--- -----		---------	--		--------	--------
+A0  coin		coin		coin		c_coin		coin
+A1  start1		start1		start1		player_1_start	start_1p
+A2  start2		start2		start2		player_2_start	start_2p
+    
+A3  js-left left	js-left1	js-left1	move_left_1	move_left_1
+A4  js-left right	js-right1	js-right1	move_right_1	move_right_1
+A5  js-left up		js-up1		js-up1		move_up_1	move_up_1
+A6  js-left down	js-down1	js-down1	move_down_1	move_down_1
+    
+A7  js-right left	...		...		fire_left_1
+A8  js-right right	...		...		fire_right_1
+A9  js-right up		...		...		fire_up_1
+A10 js-right down	...		...		fire_down_1
+
+A11 led
+A12 led
+A13 led
+A14 led
+A15 led
+    
+B1  reverse		...		throw1		...		reverse
+B2  hyperspace		...		...		...		hyperspace
+B3  inviso		...		...		...		inviso
+B4  smart-bomb		...		...		...		smart-bomb
+B5  thrust		...		...		...		thrust
+B6  fire		fire1		...		...		fire
+    
+    n/c			fire2		throw2				slam
+    n/c									service
+    n/c									h/s reset
+
+
